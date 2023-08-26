@@ -8,8 +8,9 @@ x = 10
 x += 5
 print(x)
 
-y = 10 > 5 #Comparison operator
+y = 10 == 5 #Comparison operator
 print(y)
 
-age = 25 
-print(age > 10 and age < 30)   # this is a logical operator
+age = input("Enter age: ") 
+print(age > 18 and age < 25)   # this is a logical operator
+print(age)
