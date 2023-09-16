@@ -8,7 +8,7 @@ print(age , new_patient)
 
 """ Getting input from user """
 name = input("Enter your age: ")
-print("Age = ", name) # concatenation""
+print("Age = ", name)
 
 """ Number/Arithmetic in python """
 # +, -, *, /, //, %
