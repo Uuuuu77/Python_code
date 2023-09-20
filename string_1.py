@@ -1,3 +1,4 @@
+""" Basic syntax of string """
 name = "john njuguna"
 print(name.upper())
 print(name)
@@ -49,6 +50,19 @@ print(my_string[1:13])
 for x in my_string:
     print("X = ", x)
 
-# Unicode/ascii value
-print("A = ", ord(A))
-print("65 = ", chr(65))
+################################
+
+""" String Function """
+import sys
+random_string = "  congratulations  "
+random_string = random_string.lstrip()
+random_string = random_string.rstrip()
+random_string = random_string.strip
+#print(random_string.lstrip()) needs to debug
+#print(random_string.capitalize())
+#print(random_string.upper())
+#print(random_string.lower())
+#print("Count string = ", random_string.count())
+#print(random_string.split(" "))
+
+# some of the string function include: islower, isupper, isdigit, isalpha, isalpnum...
