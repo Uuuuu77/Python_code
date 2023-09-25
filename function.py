@@ -50,3 +50,39 @@ def sum_all(*args):
     return sum
 
 print("Sum = ", sum_all(2, 5, 6, 9, 10))
+
+""" Recursive functions """
+# Dictionaries in python
+name = {"fname": "john", "lname": "njuguna", "address": "baraka, nairobi"}
+print("my name = ", name["fname"])
+print(name.keys())
+print(name.values())
+name["country"] = "Kenya"
+print(name["country"])
+del[name["address"]]
+for k, v in name.items():
+    print(k, v)
+
+# recusive functiom
+def factorial(num):
+    if num <= 1:
+        return 1
+    else:
+        result = num * factorial(num - 1)
+        return result
+    
+print("5! = ", factorial(5))
+
+# Example on fibonnaci
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        result = fib(n - 1) + fib(n - 2)
+        return result
+    
+print(fib(3))
+print(fib(4))
+print(fib(5))
