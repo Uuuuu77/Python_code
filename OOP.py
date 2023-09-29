@@ -139,4 +139,47 @@ def main():
     print(Mammals_1.birth_type)
     print(Mammals_1.appearance)
     print(Mammals_1.blooded)
+    print()
+
+    Reptile_1 = Reptile()
+    print(Reptile_1.birth_type)
+    print(Reptile_1.appearance)
+    print(Reptile_1.blooded)
+    print()
+main()
+
+""" Static methods/ Exception handling """
+# Example 1
+
+class Sum:
+    @staticmethod
+    def get_sum(*args):
+        sum = 0
+        for x in args:
+            sum += x
+        return sum
+
+def main():
+    print("Sum = ", Sum.get_sum(1, 2, 4, 6, 8))
+main()
+
+# Example 2
+
+class Dog:
+    num_of_dogs = 0
+    def __init__(self, name="Unknown"):
+        self.name = name
+
+        Dog.num_of_dogs += 1
+    
+    @staticmethod
+    def get_dogs():
+        print("There are {} number of dogs".format(Dog.num_of_dogs))
+    
+def main():
+    Bulldogs = Dog("Bulldogs")
+    puppy = Dog("puppy")
+
+    Bulldogs.get_dogs()
+    puppy.get_dogs
 main()
