@@ -11,6 +11,6 @@ print(x)
 y = 10 == 5 #Comparison operator
 print(y)
 
-age = input("Enter age: ") 
+age = int(input("Enter age: ")) 
 print(age > 18 and age < 25)   # this is a logical operator
 print(age)
